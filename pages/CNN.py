@@ -18,7 +18,7 @@ model_path = f"trained_model/plant disease_98.72.h5"
 model = tf.keras.models.load_model(model_path)
 
 # loading the class names
-class_indices = json.load(open(f"classes.json"))
+class_indices = json.load(open(f"classhes.json"))
 
 
 # Function to Load and Preprocess the Image using Pillow
