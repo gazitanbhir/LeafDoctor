@@ -1,13 +1,13 @@
 import os
 import json
 from PIL import Image
-#import streamlit_authenticator as stauth
+import streamlit_authenticator as stauth
 import numpy as np
 import tensorflow as tf
 import streamlit as st
 import time
-#import yaml
-#from yaml.loader import SafeLoader
+import yaml
+from yaml.loader import SafeLoader
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
 
