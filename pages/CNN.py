@@ -13,7 +13,7 @@ from langchain_groq import ChatGroq
 
 
 working_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = f"trained_model/plant disease_98.72.h5"
+model_path = f"https://github.com/gazitanbhir/LeafDoctor/blob/ee1b2528b7fecaf15b9b2a2f319d0fc96191c9b8/trained_model/plant%20disease_98.72.h5"
 # Load the pre-trained model
 model = tf.keras.models.load_model(model_path)
 
