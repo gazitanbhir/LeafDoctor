@@ -67,7 +67,7 @@ if uploaded_image is not None:
                     with col2:   
                         st.info(f'Confidence: {percentage:.1f}%')
 
-                    chat = ChatGroq(temperature=0, groq_api_key="your_api_key", model_name="mixtral-8x7b-32768")
+                    chat = ChatGroq(temperature=0, groq_api_key="groq_api_key", model_name="mixtral-8x7b-32768")
                     prompt = ChatPromptTemplate.from_messages([("human", "What comprehensive steps can we take for {topic} in our plants? A brief, step-by-step guide with additional tips would be greatly appreciated. Don't use words like I,We,Me. Instantly start with guide, no other talks, write it very precisely within 500 words ")])
                     chain = prompt | chat
                     my_string = ""
